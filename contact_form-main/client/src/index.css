@@ -1,0 +1,121 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Adjust height for mobile view */
+}
+
+/* Contact Form container */
+.contact-form {
+  background: white;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Form heading */
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form input fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Response message styling */
+.contact-form p {
+  margin-top: 15px;
+  color: #28a745;
+  font-size: 18px;
+}
+
+/* Error message styling */
+.contact-form p.error {
+  color: #dc3545;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .contact-form {
+    padding: 20px;
+    max-width: 90%; /* Reduce max width for smaller screens */
+  }
+
+  .contact-form h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px; /* Decrease padding for smaller screens */
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    padding: 10px; /* Adjust button size for smaller screens */
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    align-items: flex-start; /* Align form to the top on very small screens */
+    padding: 20px;
+  }
+
+  .contact-form {
+    padding: 15px;
+    max-width: 100%; /* Full width for very small screens */
+  }
+
+  .contact-form h2 {
+    font-size: 18px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .contact-form button {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
